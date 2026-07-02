@@ -70,10 +70,6 @@ if not selected:
     selected = all_armada
 
 st.title("Dashboard KPI Armada -- CV. Futago Karya")
-st.caption(
-    "Sumber: `PENDATAAN ARMADA - CLEAN.xlsx` (hasil cleaning + analisa KPI). "
-    "File sumber asli tidak diubah. Data ini snapshot per 2 Juli 2026."
-)
 
 kpi_summary = data["kpi_summary"][data["kpi_summary"]["nama_armada"].isin(selected)]
 kpi_compliance = data["kpi_compliance"][data["kpi_compliance"]["nama_armada"].isin(selected)]
